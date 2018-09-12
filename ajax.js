@@ -52,4 +52,17 @@ document.addEventListener("DOMContentLoaded", function() {
     })
   });
 
+  step8Button.addEventListener('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/time',
+      method: 'GET',
+      data: {timezone: 'Asia/Kolkata'}
+    }).done(function (responseData) {
+      console.log(responseData);
+      var time = document.createElement('p');
+      time.innerText = (responseData);
+      section8.append(time);
+    })
+  });
+
 });
