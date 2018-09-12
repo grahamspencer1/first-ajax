@@ -45,3 +45,11 @@ Step 4 #####################################################
 3. What is the new HTTP status code?
 
 500 (Internal Server Error)
+
+____________________________________________________________
+Step 6 #####################################################
+
+2. Switch back and forth between the /ping and /pong URLs, reloading the page and running your request each time. What do you see in your Developer Tools? What messages show up in your console?
+
+PING: network = 200 OK, console = "Wow what a ride! I came all the way from the server!"
+PONG: network = 500 error, console = "Request failed."

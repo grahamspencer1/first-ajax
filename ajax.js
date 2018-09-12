@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   step3456Button.addEventListener('click', function(){
     $.ajax({
-      url: 'http://first-ajax-api.herokuapp.com/pong',
+      url: 'http://first-ajax-api.herokuapp.com/ping',
       method: 'GET',
       // data: ______,
       // dataType: ______
@@ -27,9 +27,12 @@ document.addEventListener("DOMContentLoaded", function() {
       paragraph.innerText = responseData;
       section3456.append(paragraph);
     }).fail(function() {
+      console.log("Request failed.");
       var apology = document.createElement('p');
-      apology.innerText = ('Sorry, something go wrongo. Me try coding harder next timey.');
+      apology.innerText = ('Sorry, something go wrongo. Me try coding harder next time.');
       section3456.append(apology);
+    }).always(function () {
+      console.log('Request finished! Horray!')
     });
   });
 
