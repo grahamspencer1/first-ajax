@@ -31,3 +31,10 @@ ____________________________________________________________
 Type - document
 Initiator - Other
 Same values
+
+____________________________________________________________
+Step 3 #####################################################
+
+3. Click on the request. This displays a detailed view of this one request. Investigate the "Response" and "Preview" sub-tabs. What was the content of the response?
+
+"Wow what a ride! I came all the way from the server!"
