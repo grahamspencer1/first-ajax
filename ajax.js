@@ -12,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
   var section8 = document.querySelector('#step8');
   var section9 = document.querySelector('#step9');
 
+  var listOfCars = document.querySelector('#carlist');
+
   step12Button.addEventListener('click', function() {
     $.ajax({
       url: 'http://first-ajax-api.herokuapp.com/',
@@ -62,6 +64,18 @@ document.addEventListener("DOMContentLoaded", function() {
       var time = document.createElement('p');
       time.innerText = (responseData);
       section8.append(time);
+    })
+  });
+
+  step9Button.addEventListener('click', function() {
+    $.ajax({
+      url: 'http://first-ajax-api.herokuapp.com/a_car',
+      method: 'GET',
+      dataType: 'HTML'
+    }).done(function (responseData) {
+      console.log(responseData);
+      listOfCars.innerHTML = (responseData);
+      section9.append(listOfCars);
     })
   });
 

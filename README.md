@@ -53,3 +53,11 @@ Step 6 #####################################################
 
 PING: network = 200 OK, console = "Wow what a ride! I came all the way from the server!"
 PONG: network = 500 error, console = "Request failed."
+
+____________________________________________________________
+Step 9 #####################################################
+
+3. Investigate the Request and Response "Headers" in your Network Tab. What is the 'Accepts' of the Request, and the 'Content-Type' of the response?
+
+Accept: text/html, */*; q=0.01
+Content-Type: text/html; charset=utf-8
